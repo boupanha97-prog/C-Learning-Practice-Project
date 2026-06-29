@@ -1,48 +1,45 @@
 #include <stdio.h>
 
 int main() {
-    int n, choice;
-    printf("Enter vector dimension N: ");
-    if (scanf("%d", &n) != 1 || n <= 0) return 0;
+    int U[3] = {1,2,-3};
+    int V[3] = {-2,3,-1};
+    int W[3] = {4,2,-5};
+    
+    printf("Vector U+V = ");
+    for(int i=0; i<3; i++){
+        printf("%d ", U[i]+V[i]);
+    }
+    
+    printf("\nVector U+W = ");
+    for(int i=0; i<3; i++){
+        printf("%d ", U[i]+W[i]);
+    }   
 
-    double v1[100], v2[100];
-    printf("Enter elements of Vector 1:\n");
-    for (int i = 0; i < n; i++) scanf("%lf", &v1[i]);
+    printf("\nVector V+W = ");
+    for(int i=0; i<3; i++){
+        printf("%d ", V[i]+W[i]);
+    }
+    
+    printf("\nVector U-V = ");
+    for(int i=0; i<3; i++){
+        printf("%d ", U[i]-V[i]);
+    }
 
-    printf("Enter elements of Vector 2:\n");
-    for (int i = 0; i < n; i++) scanf("%lf", &v2[i]);
+    printf("\nVector U-W = ");
+    for(int i=0; i<3; i++){
+        printf("%d ", U[i]-W[i]);
+    }
 
-    do {
-        printf("\n=== Vector Operations Menu ===\n");
-        printf("1. Vector Sum (V1 + V2)\n");
-        printf("2. Vector Subtraction (V1 - V2)\n");
-        printf("3. Scalar Multiplication (k * V1)\n");
-        printf("0. Exit\n");
-        printf("Choice: ");
-        scanf("%d", &choice);
+    printf("\nVector 2V-3U = ");
+    for(int i=0; i<3; i++){
+        printf("%d ", (2*V[i])-(3*U[i]));
+    }
 
-        switch (choice) {
-            case 1:
-                printf("Sum: [ ");
-                for (int i = 0; i < n; i++) printf("%.2lf ", v1[i] + v2[i]);
-                printf("]\n");
-                break;
-            case 2:
-                printf("Difference: [ ");
-                for (int i = 0; i < n; i++) printf("%.2lf ", v1[i] - v2[i]);
-                printf("]\n");
-                break;
-            case 3: {
-                double k;
-                printf("Enter scalar k: ");
-                scanf("%lf", &k);
-                printf("Scaled V1: [ ");
-                for (int i = 0; i < n; i++) printf("%.2lf ", k * v1[i]);
-                printf("]\n");
-                break;
-            }
-        }
-    } while (choice != 0);
+    printf("\nVector 2U+3V-4W = ");
+    for(int i=0; i<3; i++){
+        printf("%d ", (2*U[i])+(3*V[i])-(4*W[i]));
+    }
+    printf("\n");
 
     return 0;
 }
