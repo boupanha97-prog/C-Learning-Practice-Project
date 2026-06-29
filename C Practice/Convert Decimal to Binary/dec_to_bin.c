@@ -18,11 +18,11 @@ int main() {
         i++;
     }
 
-    printf("_______________\n");
+    printf("_____________\n");
     printf("Output Binary: ");
 
-    for (int j = i - 1; j >= 0; j--) {
-        printf("%d", binary[j]);
+    for (int j0=i-1; j0>=0; j0--) {
+        printf("%d", binary[j0]);
     }
     printf("\n");
 

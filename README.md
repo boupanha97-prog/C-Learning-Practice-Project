@@ -15,7 +15,7 @@
 
 ## 📌 Overview
 
-Welcome to the **C Learning Practice Project** repository. This workspace contains structured programming exercises ranging from foundational input/output algorithms to interactive games and local financial calculation systems written in pure C.
+Welcome to the **C Learning Practice Project** repository. This workspace contains structured programming exercises ranging from foundational input/output algorithms to interactive games, vector mathematics, number base converters, and local financial calculation systems written in pure C.
 
 ---
 
@@ -23,94 +23,20 @@ Welcome to the **C Learning Practice Project** repository. This workspace contai
 
 | Icon | Project Module | Description | Key Topics |
 | :---: | :--- | :--- | :--- |
-| 🔢 | **[Decimal to Binary](<C Practice/Covert Decimal to Binary/dec_to_bin.c>)** | Converts positive decimal integers into their binary representation. | Binary division, array manipulation |
-| 🎲 | **[Kla Klok](<C Practice/Kla Klok/kla_klok.c>)** | Console game simulating the traditional Khmer dice game (Bau Cua / Fish-Prawn-Crab). | Randomization (`rand`), switch-case, state logic |
-| 🇰🇭 | **[Khmer Numeral Calling Money](<C Practice/Khmer numeral system for calling money/khmer_calling_money.c>)** | Converts numerical currency amounts into spoken Khmer number terminology. | Digit extraction, modulo arithmetic, recursive/iterative output |
-| 💵 | **[Banknote Counting System](<C Practice/Banknote type counting system/counting_system.c>)** | Calculates the minimum breakdown of $100, $50, $20, $10, and $1 banknotes for any input amount. | Greedy algorithm, integer division, remainder tracking |
-| 🇰🇭 | **[Cambodia Payroll Tax System](<C Practice/Cambodia payroll tax system/tax_system.c>)** | Calculates Cambodian salary tax base, dependent child allowances, and progressive tax brackets. | Conditional branching, tax slab calculations |
-| 🔄 | **[Reverse The Number](<C Practice/Reverse the number/Reverse_number.c>)** | Reverses the digits of an integer using iterative arithmetic. | While loops, modulo operator (`%`) |
-| 📋 | **[Print Profile Info](<C Practice/Print name DOB and mobile number/>)** | Basic exercise demonstrating formatted console input and output. | Standard I/O (`printf`, `scanf`) |
-
----
-
-## 🔍 Code Snippets & Previews
-
-<details>
-<summary><b>▶ 1. Convert Decimal to Binary (dec_to_bin.c)</b></summary>
-
-```c
-#include <stdio.h>
-
-int main() {
-    int dec, i = 0;
-    int binary[50];
-
-    printf("Input Dec: ");
-    scanf("%d", &dec);
-
-    if (dec == 0) {
-        printf("Output Binary: 0\n");
-        return 0;
-    }
-
-    while (dec > 0) {
-        binary[i] = dec % 2;
-        dec = dec / 2;
-        i++;
-    }
-
-    printf("Output Binary: ");
-    for (int j = i - 1; j >= 0; j--) {
-        printf("%d", binary[j]);
-    }
-    printf("\n");
-    return 0;
-}
-```
-</details>
-
-<details>
-<summary><b>▶ 2. Banknote Type Counting System (counting_system.c)</b></summary>
-
-```c
-#include <stdio.h>
-
-int main() {
-    int n;
-    printf("N :");
-    scanf("%d", &n);
-    printf("100$ =%d សន្លឹក", n / 100);
-    n -= n / 100 * 100;
-    printf("\n50$ =%d សន្លឹក", n / 50);
-    n -= n / 50 * 50;
-    printf("\n20$ =%d សន្លឹក", n / 20);
-    n -= n / 20 * 20;
-    printf("\n10$ =%d សន្លឹក", n / 10);
-    n -= n / 10 * 10;
-    printf("\n 1$ =%d សន្លឹក", n / 1);
-    return 0;
-}
-```
-</details>
-
-<details>
-<summary><b>▶ 3. Reverse The Number (Reverse_number.c)</b></summary>
-
-```c
-#include <stdio.h>
-
-int main() {
-    int n;
-    printf("N :");
-    scanf("%d", &n);
-    while (n != 0) {
-        printf("%d", n % 10);
-        n /= 10;
-    }
-    return 0;
-}
-```
-</details>
+| 🔢 | **[Decimal to Binary](<C Practice/Convert Decimal to Binary/dec_to_bin.c>)** | Converts positive decimal integers into binary representation. | Binary division, array manipulation |
+| 🔢 | **[Binary to Decimal](<C Practice/Convert Binary to Decimal/bin_to_dec.c>)** | Converts binary numbers into decimal integers. | Bitwise logic, positional notation |
+| 🔢 | **[Binary to Octal](<C Practice/Convert Binary to Octal/bin_to_octal.c>)** | Converts binary input to base-8 octal representation. | Multi-base conversion |
+| 🔢 | **[Decimal to Hexadecimal](<C Practice/Convert Decimal to Hexadecimal/dec_to_hex.c>)** | Converts decimal numbers to hex format (0-9, A-F). | Character mapping, base-16 arithmetic |
+| 🔢 | **[Decimal to Octal](<C Practice/Convert Decimal to Octal/dec_to_octal.c>)** | Converts decimal numbers to octal system. | Base-8 modulo division |
+| 🔢 | **[Octal to Decimal](<C Practice/Convert Octal to Decimal/octal_to_dec.c>)** | Converts base-8 octal values to decimal. | Polynomial expansion |
+| 🔢 | **[Octal to Binary](<C Practice/Covert Octal to Binary/octal_to_bin.c>)** | Converts base-8 octal values into binary representation. | Intermediate base conversion |
+| 📐 | **[Vector Calculator (Product & Norm)](<C Practice/Calculator Vector System (Multiple, Norm Vector)/cal_one_loop.c>)** | Calculates vector dot product and Euclidean norm (||V||). | Linear algebra, `math.h`, `sqrt` |
+| 📐 | **[Vector Calculator (Sum, Diff, Scalar)](<C Practice/Calculator Vector System (Sum, Subtraction, scaler)/cal_one_loop.c>)** | Computes vector addition, subtraction, and scalar multiplication. | Vector operations, array traversal |
+| 🎲 | **[Kla Klok](<C Practice/Kla Klok/kla_klok.c>)** | Console game simulating the traditional Khmer dice game (Bau Cua / Fish-Prawn-Crab). | Randomization (`rand`), switch-case |
+| 🇰🇭 | **[Khmer Numeral Calling Money](<C Practice/Khmer numeral system for calling money/khmer_calling_money.c>)** | Converts numerical currency amounts into spoken Khmer number terminology. | Digit extraction, modulo arithmetic |
+| 💵 | **[Banknote Counting System](<C Practice/Banknote type counting system/counting_system.c>)** | Calculates the minimum breakdown of $100, $50, $20, $10, and $1 banknotes. | Greedy algorithm, integer division |
+| 🇰🇭 | **[Cambodia Payroll Tax System](<C Practice/Cambodia payroll tax system/tax_system.c>)** | Calculates Cambodian salary tax base and progressive tax brackets. | Conditional branching, tax slabs |
+| 🔄 | **[Reverse The Number](<C Practice/Reverse the number/Reverse_number.c>)** | Reverses digits of an integer input. | While loops, modulo operator (`%`) |
 
 ---
 
@@ -128,18 +54,14 @@ gcc --version
 Navigate to the project folder of your choice and compile using GCC:
 
 ```powershell
-# 1. Navigate to the desired project directory
-cd "C Practice\Covert Decimal to Binary"
-
-# 2. Compile the C source file
+# Example: Running Decimal to Binary Converter
+cd "C Practice\Convert Decimal to Binary"
 gcc dec_to_bin.c -o dec_to_bin
-
-# 3. Execute the binary
 .\dec_to_bin
 ```
 
 > 💡 **Tip for Windows PowerShell Users:** 
-> When running `cd` commands, avoid putting a trailing backslash inside double quotes (e.g., use `"folder"` instead of `"folder\"`), as PowerShell treats `\"` as an escaped quote character.
+> When running `cd` commands, avoid putting a trailing backslash inside double quotes (e.g., use `"folder"` instead of `"folder"`), as PowerShell treats `"` as an escaped quote character.
 
 ---
 
