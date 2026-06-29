@@ -23,6 +23,7 @@ Welcome to the **C Learning Practice Project** repository. This workspace contai
 
 | Icon | Project Module | Description | Key Topics |
 | :---: | :--- | :--- | :--- |
+| 🔢 | **[Decimal to Binary](<C Practice/Covert Decimal to Binary/dec_to_bin.c>)** | Converts positive decimal integers into their binary representation. | Binary division, array manipulation |
 | 🎲 | **[Kla Klok](<C Practice/Kla Klok/kla_klok.c>)** | Console game simulating the traditional Khmer dice game (Bau Cua / Fish-Prawn-Crab). | Randomization (`rand`), switch-case, state logic |
 | 🇰🇭 | **[Khmer Numeral Calling Money](<C Practice/Khmer numeral system for calling money/khmer_calling_money.c>)** | Converts numerical currency amounts into spoken Khmer number terminology. | Digit extraction, modulo arithmetic, recursive/iterative output |
 | 💵 | **[Banknote Counting System](<C Practice/Banknote type counting system/counting_system.c>)** | Calculates the minimum breakdown of $100, $50, $20, $10, and $1 banknotes for any input amount. | Greedy algorithm, integer division, remainder tracking |
@@ -47,13 +48,13 @@ Navigate to the project folder of your choice and compile using GCC:
 
 ```powershell
 # 1. Navigate to the desired project directory
-cd "C Practice\Banknote type counting system"
+cd "C Practice\Covert Decimal to Binary"
 
 # 2. Compile the C source file
-gcc counting_system.c -o counting_system
+gcc dec_to_bin.c -o dec_to_bin
 
 # 3. Execute the binary
-.\counting_system
+.\dec_to_bin
 ```
 
 > 💡 **Tip for Windows PowerShell Users:** 
