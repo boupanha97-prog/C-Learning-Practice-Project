@@ -1,39 +1,26 @@
 #include <stdio.h>
 
 int main() {
-    int n;
-    double scalar;
-    printf("Enter vector dimension N: ");
-    if (scanf("%d", &n) != 1 || n <= 0) return 0;
-
-    double v1[100], v2[100], sum[100], diff[100], scaled[100];
-    printf("Enter elements of Vector 1:\n");
-    for (int i = 0; i < n; i++) scanf("%lf", &v1[i]);
-
-    printf("Enter elements of Vector 2:\n");
-    for (int i = 0; i < n; i++) scanf("%lf", &v2[i]);
-
-    printf("Enter Scalar value: ");
-    scanf("%lf", &scalar);
-
-    for (int i = 0; i < n; i++) {
-        sum[i] = v1[i] + v2[i];
-        diff[i] = v1[i] - v2[i];
-        scaled[i] = v1[i] * scalar;
+    int U[3] = {1,2,-3};
+    int V[3] = {-2,3,-1};
+    int W[3] = {4,2,-5};
+    int a[3], b[3], c[3], d[3], e[3], f[3], g[3];
+    
+    for(int i=0; i<3; i++){
+        a[i]= U[i]+V[i];
+        b[i]= U[i]+W[i];
+        c[i]= V[i]+W[i];
+        d[i]= U[i]-V[i];
+        e[i]= U[i]-W[i];
+        f[i]= (2*V[i])-(3*U[i]);
+        g[i]= (2*U[i])+(3*V[i])-(4*W[i]);
     }
-
-    printf("______________\n");
-    printf("Vector Sum (V1 + V2): [ ");
-    for (int i = 0; i < n; i++) printf("%.2lf ", sum[i]);
-    printf("]\n");
-
-    printf("Vector Subtraction (V1 - V2): [ ");
-    for (int i = 0; i < n; i++) printf("%.2lf ", diff[i]);
-    printf("]\n");
-
-    printf("Scalar Product (%.2lf * V1): [ ", scalar);
-    for (int i = 0; i < n; i++) printf("%.2lf ", scaled[i]);
-    printf("]\n");
-
+    printf("Vector U+V = (%d, %d, %d)", a[0], a[1], a[2]);
+    printf("\nVector U+W = (%d, %d, %d)", b[0], b[1], b[2]);
+    printf("\nVector V+W = (%d, %d, %d)", c[0], c[1], c[2]);
+    printf("\nVector U-V = (%d, %d, %d)", d[0], d[1], d[2]);
+    printf("\nVector U-W = (%d, %d, %d)", e[0], e[1], e[2]);
+    printf("\nVector 2V-3U = (%d, %d, %d)", f[0], f[1], f[2]);
+    printf("\nVector 2U+3V-4W = (%d, %d, %d)\n", g[0], g[1], g[2]);
     return 0;
 }

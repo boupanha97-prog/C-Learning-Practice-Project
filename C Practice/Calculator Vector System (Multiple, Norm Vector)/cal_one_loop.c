@@ -2,28 +2,26 @@
 #include <math.h>
 
 int main() {
-    int n;
-    printf("Enter vector dimension N: ");
-    if (scanf("%d", &n) != 1 || n <= 0) return 0;
+    int U[3] = {1,2,-3};
+    int V[3] = {-2,3,-1};
+    int W[3] = {4,2,-5};
+    int s=0,s1=0,s2=0,s3=0,s4=0,s5=0;
 
-    double v1[100], v2[100];
-    printf("Enter elements of Vector 1:\n");
-    for (int i = 0; i < n; i++) scanf("%lf", &v1[i]);
-
-    printf("Enter elements of Vector 2:\n");
-    for (int i = 0; i < n; i++) scanf("%lf", &v2[i]);
-
-    double dot_product = 0.0, norm1 = 0.0, norm2 = 0.0;
-    for (int i = 0; i < n; i++) {
-        dot_product += v1[i] * v2[i];
-        norm1 += v1[i] * v1[i];
-        norm2 += v2[i] * v2[i];
+    for(int i=0; i<3; i++){
+        s= s+U[i]*V[i];
+        s1=s1+V[i]*W[i];
+        s2=s2+U[i]*W[i];
+        s3=s3+U[i]*U[i];
+        s4=s4+V[i]*V[i];
+        s5=s5+W[i]*W[i];
     }
-
-    printf("______________\n");
-    printf("Dot Product (V1 . V2): %.2lf\n", dot_product);
-    printf("Norm of Vector 1 ||V1||: %.2lf\n", sqrt(norm1));
-    printf("Norm of Vector 2 ||V2||: %.2lf\n", sqrt(norm2));
+    printf("\nVector UxV = %d", s);
+    printf("\nVector VxW = %d", s1);
+    printf("\nVector UxW = %d", s2);
+    
+    printf("\nVector ||U||= sqrt(%d) = %.2f", s3, sqrt(s3));
+    printf("\nVector ||V||= sqrt(%d) = %.2f", s4, sqrt(s4));
+    printf("\nVector ||W||= sqrt(%d) = %.2f\n", s5, sqrt(s5));
 
     return 0;
 }
