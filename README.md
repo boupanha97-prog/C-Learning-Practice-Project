@@ -56,12 +56,10 @@ int main() {
     printf("Vector U+V = ");
     for(int i=0; i<3; i++) printf("%d ", U[i]+V[i]);
     
-    printf("
-Vector 2V-3U = ");
+    printf("\nVector 2V-3U = ");
     for(int i=0; i<3; i++) printf("%d ", (2*V[i])-(3*U[i]));
 
-    printf("
-Vector 2U+3V-4W = ");
+    printf("\nVector 2U+3V-4W = ");
     for(int i=0; i<3; i++) printf("%d ", (2*U[i])+(3*V[i])-(4*W[i]));
 
     return 0;
@@ -84,11 +82,8 @@ int main() {
         s += U[i]*V[i];
         s3 += U[i]*U[i];
     }
-    printf("
-Vector UxV = %d", s);
-    printf("
-Vector ||U|| = sqrt(%d) = %.2f
-", s3, sqrt(s3));
+    printf("\nVector UxV = %d", s);
+    printf("\nVector ||U|| = sqrt(%d) = %.2f\n", s3, sqrt(s3));
 
     return 0;
 }
