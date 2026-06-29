@@ -33,6 +33,87 @@ Welcome to the **C Learning Practice Project** repository. This workspace contai
 
 ---
 
+## 🔍 Code Snippets & Previews
+
+<details>
+<summary><b>▶ 1. Convert Decimal to Binary (dec_to_bin.c)</b></summary>
+
+```c
+#include <stdio.h>
+
+int main() {
+    int dec, i = 0;
+    int binary[50];
+
+    printf("Input Dec: ");
+    scanf("%d", &dec);
+
+    if (dec == 0) {
+        printf("Output Binary: 0\n");
+        return 0;
+    }
+
+    while (dec > 0) {
+        binary[i] = dec % 2;
+        dec = dec / 2;
+        i++;
+    }
+
+    printf("Output Binary: ");
+    for (int j = i - 1; j >= 0; j--) {
+        printf("%d", binary[j]);
+    }
+    printf("\n");
+    return 0;
+}
+```
+</details>
+
+<details>
+<summary><b>▶ 2. Banknote Type Counting System (counting_system.c)</b></summary>
+
+```c
+#include <stdio.h>
+
+int main() {
+    int n;
+    printf("N :");
+    scanf("%d", &n);
+    printf("100$ =%d សន្លឹក", n / 100);
+    n -= n / 100 * 100;
+    printf("\n50$ =%d សន្លឹក", n / 50);
+    n -= n / 50 * 50;
+    printf("\n20$ =%d សន្លឹក", n / 20);
+    n -= n / 20 * 20;
+    printf("\n10$ =%d សន្លឹក", n / 10);
+    n -= n / 10 * 10;
+    printf("\n 1$ =%d សន្លឹក", n / 1);
+    return 0;
+}
+```
+</details>
+
+<details>
+<summary><b>▶ 3. Reverse The Number (Reverse_number.c)</b></summary>
+
+```c
+#include <stdio.h>
+
+int main() {
+    int n;
+    printf("N :");
+    scanf("%d", &n);
+    while (n != 0) {
+        printf("%d", n % 10);
+        n /= 10;
+    }
+    return 0;
+}
+```
+</details>
+
+---
+
 ## ⚡ Quick Start & Execution Guide
 
 ### Prerequisites
