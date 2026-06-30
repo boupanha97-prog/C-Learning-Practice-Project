@@ -23,20 +23,20 @@ Welcome to the **C Learning Practice Project** repository. This workspace contai
 
 | Icon | Project Module | Description | Key Topics |
 | :---: | :--- | :--- | :--- |
-| 📐 | **[Vector Arithmetic System](<Calculator Vector System (Sum, Subtraction, scaler)/cal_one_loop.c>)** | Calculates 3D vector addition, subtraction, and linear combinations ($2V-3U, 2U+3V-4W$). | Vector algebra, array loops |
-| 📐 | **[Vector Product & Norm System](<Calculator Vector System (Multiple, Norm Vector)/cal_one_loop.c>)** | Computes dot products ($U \cdot V, V \cdot W$) and Euclidean norms ($||U||, ||V||, ||W||$). | Linear algebra, `math.h`, `sqrt` |
-| 🔢 | **[Decimal to Binary](<Convert Decimal to Binary/dec_to_bin.c>)** | Converts positive decimal integers into binary representation. | Binary division, array manipulation |
-| 🔢 | **[Binary to Decimal](<Convert Binary to Decimal/bin_to_dec.c>)** | Converts binary numbers into decimal integers. | Bitwise logic, positional notation |
-| 🔢 | **[Binary to Octal](<Convert Binary to Octal/bin_to_octal.c>)** | Converts binary input to base-8 octal representation. | Multi-base conversion |
-| 🔢 | **[Decimal to Hexadecimal](<Convert Decimal to Hexadecimal/dec_to_hex.c>)** | Converts decimal numbers to hex format (0-9, A-F). | Character mapping, base-16 arithmetic |
-| 🔢 | **[Decimal to Octal](<Convert Decimal to Octal/dec_to_octal.c>)** | Converts decimal numbers to octal system. | Base-8 modulo division |
-| 🔢 | **[Octal to Decimal](<Convert Octal to Decimal/octal_to_dec.c>)** | Converts base-8 octal values to decimal. | Polynomial expansion |
-| 🔢 | **[Octal to Binary](<Covert Octal to Binary/octal_to_bin.c>)** | Converts base-8 octal values into binary representation. | Intermediate base conversion |
-| 🎲 | **[Kla Klok](<Kla Klok/kla_klok.c>)** | Console game simulating the traditional Khmer dice game (Bau Cua / Fish-Prawn-Crab). | Randomization (`rand`), switch-case |
-| 🇰🇭 | **[Khmer Numeral Calling Money](<Khmer numeral system for calling money/khmer_calling_money.c>)** | Converts numerical currency amounts into spoken Khmer number terminology. | Digit extraction, modulo arithmetic |
-| 💵 | **[Banknote Counting System](<Banknote type counting system/counting_system.c>)** | Calculates the minimum breakdown of $100, $50, $20, $10, and $1 banknotes. | Greedy algorithm, integer division |
-| 🇰🇭 | **[Cambodia Payroll Tax System](<Cambodia payroll tax system/tax_system.c>)** | Calculates Cambodian salary tax base and progressive tax brackets. | Conditional branching, tax slabs |
-| 🔄 | **[Reverse The Number](<Reverse the number/Reverse_number.c>)** | Reverses digits of an integer input. | While loops, modulo operator (`%`) |
+| 📐 | **[Vector Arithmetic System](<Calculator Vector System (Sum, Subtraction, scaler)/README.md>)** | Calculates 3D vector addition, subtraction, and linear combinations ($2V-3U, 2U+3V-4W$). | Vector algebra, array loops |
+| 📐 | **[Vector Product & Norm System](<Calculator Vector System (Multiple, Norm Vector)/README.md>)** | Computes dot products ($U \cdot V, V \cdot W$) and Euclidean norms ($||U||, ||V||, ||W||$). | Linear algebra, `math.h`, `sqrt` |
+| 🔢 | **[Decimal to Binary](<Convert Decimal to Binary/README.md>)** | Converts positive decimal integers into binary representation. | Binary division, array manipulation |
+| 🔢 | **[Binary to Decimal](<Convert Binary to Decimal/README.md>)** | Converts binary numbers into decimal integers. | Bitwise logic, positional notation |
+| 🔢 | **[Binary to Octal](<Convert Binary to Octal/README.md>)** | Converts binary input to base-8 octal representation. | Multi-base conversion |
+| 🔢 | **[Decimal to Hexadecimal](<Convert Decimal to Hexadecimal/README.md>)** | Converts decimal numbers to hex format (0-9, A-F). | Character mapping, base-16 arithmetic |
+| 🔢 | **[Decimal to Octal](<Convert Decimal to Octal/README.md>)** | Converts decimal numbers to octal system. | Base-8 modulo division |
+| 🔢 | **[Octal to Decimal](<Convert Octal to Decimal/README.md>)** | Converts base-8 octal values to decimal. | Polynomial expansion |
+| 🔢 | **[Octal to Binary](<Covert Octal to Binary/README.md>)** | Converts base-8 octal values into binary representation. | Intermediate base conversion |
+| 🎲 | **[Kla Klok](<Kla Klok/README.md>)** | Console game simulating the traditional Khmer dice game (Bau Cua / Fish-Prawn-Crab). | Randomization (`rand`), switch-case |
+| 🇰🇭 | **[Khmer Numeral Calling Money](<Khmer numeral system for calling money/README.md>)** | Converts numerical currency amounts into spoken Khmer number terminology. | Digit extraction, modulo arithmetic |
+| 💵 | **[Banknote Counting System](<Banknote type counting system/README.md>)** | Calculates the minimum breakdown of $100, $50, $20, $10, and $1 banknotes. | Greedy algorithm, integer division |
+| 🇰🇭 | **[Cambodia Payroll Tax System](<Cambodia payroll tax system/README.md>)** | Calculates Cambodian salary tax base and progressive tax brackets. | Conditional branching, tax slabs |
+| 🔄 | **[Reverse The Number](<Reverse the number/README.md>)** | Reverses digits of an integer input. | While loops, modulo operator (`%`) |
 
 ---
 
