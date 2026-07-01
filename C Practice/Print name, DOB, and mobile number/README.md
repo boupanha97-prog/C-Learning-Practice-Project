@@ -30,3 +30,27 @@ cd "3. print zero padded"
 gcc zero_padded.c -o zero_padded
 .\zero_padded
 ```
+
+## 📊 Expected Output Results
+
+### 1. Simple Print Output
+```text
+Name: Bou
+DOB: July 14, 1975
+Mobile:  0123456789
+```
+
+### 2. Print Right Aligned Output
+```text
+Full Name      :                 Bou Panha
+Date of Birth  :                15-09-1995
+Mobile Number  :                 123456789
+```
+
+### 3. Print Zero Padded Output
+```text
+Full Name      : 00000000000Bou Panha
+Date of Birth  : 000000012-March-2006
+Mobile Number  : 00000000000123456789
+```
+
