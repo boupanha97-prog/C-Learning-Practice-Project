@@ -10,3 +10,11 @@ Converts base-8 octal numbers into binary representation.
 gcc octal_to_bin.c -o octal_to_bin
 .\octal_to_bin
 ```
+
+## 📊 Expected Output Results
+```text
+Input Octal: 123
+--------------
+Output binary: 1010011
+```
+

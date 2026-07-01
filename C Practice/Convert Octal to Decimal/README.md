@@ -10,3 +10,11 @@ Converts base-8 octal values into base-10 decimal representation using positiona
 gcc octal_to_dec.c -o octal_to_dec
 .\octal_to_dec
 ```
+
+## 📊 Expected Output Results
+```text
+Input Binary: 123
+--------------
+Output Dec: 83
+```
+

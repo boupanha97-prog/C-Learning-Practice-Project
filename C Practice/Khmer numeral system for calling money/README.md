@@ -10,3 +10,10 @@ A C program that parses integer monetary amounts and prints the corresponding sp
 gcc khmer_calling_money.c -o khmer_calling_money
 .\khmer_calling_money
 ```
+
+## 📊 Expected Output Results
+```text
+បញ្ជូលលុយរបស់អ្នក: 12345
+មួយមុឺនពីរពាន់បីរយសែសិបប្រាំ
+```
+

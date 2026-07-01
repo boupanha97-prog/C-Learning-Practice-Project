@@ -10,3 +10,11 @@ Converts base-10 decimal numbers into base-16 hexadecimal format (using digits `
 gcc dec_to_hex.c -o dec_to_hex
 .\dec_to_hex
 ```
+
+## 📊 Expected Output Results
+```text
+Input Dec: 254
+.......................
+Output Hex: FE
+```
+

@@ -10,3 +10,10 @@ A foundational algorithm in C that extracts digits using modulo arithmetic (`% 1
 gcc Reverse_number.c -o Reverse_number
 .\Reverse_number
 ```
+
+## 📊 Expected Output Results
+```text
+N : 12345
+54321
+```
+

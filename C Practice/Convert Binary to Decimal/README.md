@@ -10,3 +10,11 @@ Converts binary integer inputs (e.g., `1101`) into their base-10 decimal equival
 gcc bin_to_dec.c -o bin_to_dec
 .\bin_to_dec
 ```
+
+## 📊 Expected Output Results
+```text
+Input Binary: 11011
+---------------
+Output Dec: 27
+```
+
