@@ -1,36 +1,35 @@
+// Online C compiler to run C program online
 #include <stdio.h>
+#include <math.h>
 
 int main() {
-    long long bin;
-    int dec = 0, i = 0, rem, octal[50], oct_idx = 0;
-
+    long long binary;
+    int dec=0, remain, i=0;
+    int octal[20];
+    
     printf("Input Binary: ");
-    if (scanf("%lld", &bin) != 1) return 0;
-
-    long long temp = bin;
-    while (temp != 0) {
-        rem = temp % 10;
-        temp /= 10;
-        dec += rem * (1 << i);
+    scanf("%lld", &binary);
+    
+    while(binary>0){
+        remain= binary % 10;
+        dec += remain*pow(2,i);
+        binary = binary/10;
         i++;
     }
-
-    if (dec == 0) {
-        printf("Output Octal: 0\n");
-        return 0;
+    
+    i=0;
+    while(dec>0){
+        octal[i]= dec%8;
+        dec= dec/8;
+        i=i+1;
     }
-
-    while (dec > 0) {
-        octal[oct_idx++] = dec % 8;
-        dec /= 8;
-    }
-
-    printf("______________\n");
-    printf("Output Octal: ");
-    for (int j = oct_idx - 1; j >= 0; j--) {
+    
+    printf("---------------\n");
+    printf("Output octal: ");
+    
+    for(int j=i-1; j>=0; j--){
         printf("%d", octal[j]);
     }
-    printf("\n");
 
     return 0;
 }
