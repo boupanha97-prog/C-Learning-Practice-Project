@@ -40,6 +40,7 @@ Below is the layout of the project, highlighting each practice module:
 │   ├── Covert Octal to Binary/                      # Octal to binary converter
 │   ├── Khmer numeral system for calling money/       # Converts numeric currency to spoken Khmer terminology
 │   ├── Kla Klok/                                    # Simulated Khmer traditional dice game
+│   ├── Print name, DOB, and mobile number/          # String formatting options (simple, right-aligned, zero-padded)
 │   └── Reverse the number/                          # Digit reversal utility
 ├── .gitignore                                       # Git ignore rules for compiled binaries (.exe, etc.)
 └── README.md                                        # This main navigation guide
@@ -66,6 +67,8 @@ Jump directly to the detailed documentation for any project module below:
     *   [Kla Klok (Khmer Dice Game)](<C Practice/Kla Klok/README.md>)
     *   [Khmer Numeral Calling Money](<C Practice/Khmer numeral system for calling money/README.md>)
     *   [Reverse The Number](<C Practice/Reverse the number/README.md>)
+*   🖨️ **Formatting & Printing**
+    *   [Print name, DOB, and mobile number](<C Practice/Print name, DOB, and mobile number/README.md>)
 
 ---
 
