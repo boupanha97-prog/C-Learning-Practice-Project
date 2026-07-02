@@ -37,7 +37,7 @@ Welcome to the **C Learning Practice Project** repository. This workspace contai
 | 💵 | **[Banknote Counting System](<Banknote type counting system/README.md>)** | Calculates the minimum breakdown of $100, $50, $20, $10, and $1 banknotes. | Greedy algorithm, integer division |
 | 🇰🇭 | **[Cambodia Payroll Tax System](<Cambodia payroll tax system/README.md>)** | Calculates Cambodian salary tax base and progressive tax brackets. | Conditional branching, tax slabs |
 | 🔄 | **[Reverse The Number](<Reverse the number/README.md>)** | Reverses digits of an integer input. | While loops, modulo operator (`%`) |
-| 🖨️ | **[Print Formatting](<Print name, DOB, and mobile number/README.md>)** | Format output details (simple, right-aligned, zero-padded). | String formatting, `printf` widths |
+| 🖨️ | **[Print Formatting](<Print name, DOB, and mobile number/README.md>)** | Format output details (simple, right-aligned, zero-padded, uppercase masked, and multi-column). | String formatting, `printf` widths |
 
 ---
 
