@@ -38,6 +38,7 @@ Below is the layout of the project, highlighting each practice module:
 │   ├── Convert Decimal to Octal/                    # Decimal to base-8 converter
 │   ├── Convert Octal to Decimal/                    # Octal to decimal converter
 │   ├── Covert Octal to Binary/                      # Octal to binary converter
+│   ├── Get the C Version in use/                    # Queries compiler metadata and C standards
 │   ├── Khmer numeral system for calling money/       # Converts numeric currency to spoken Khmer terminology
 │   ├── Kla Klok/                                    # Simulated Khmer traditional dice game
 │   ├── Print name, DOB, and mobile number/          # String formatting options (simple, right-aligned, zero-padded)
@@ -69,6 +70,8 @@ Jump directly to the detailed documentation for any project module below:
     *   [Reverse The Number](<C Practice/Reverse the number/README.md>)
 *   🖨️ **Formatting & Printing**
     *   [Print name, DOB, and mobile number](<C Practice/Print name, DOB, and mobile number/README.md>)
+*   🔍 **Environment & Version Info**
+    *   [C Compiler & Standard Version Detector](<C Practice/Get the C Version in use/README.md>)
 
 ---
 

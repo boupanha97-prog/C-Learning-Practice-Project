@@ -38,6 +38,7 @@ Welcome to the **C Learning Practice Project** repository. This workspace contai
 | 🇰🇭 | **[Cambodia Payroll Tax System](<Cambodia payroll tax system/README.md>)** | Calculates Cambodian salary tax base and progressive tax brackets. | Conditional branching, tax slabs |
 | 🔄 | **[Reverse The Number](<Reverse the number/README.md>)** | Reverses digits of an integer input. | While loops, modulo operator (`%`) |
 | 🖨️ | **[Print Formatting](<Print name, DOB, and mobile number/README.md>)** | Format output details (simple, right-aligned, zero-padded, uppercase masked, and multi-column). | String formatting, `printf` widths |
+| 🔍 | **[C Compiler & Standard Version Detector](<Get the C Version in use/README.md>)** | Queries compiler metadata, preprocessor macros, and C standard version. | Compiler detection (`__GNUC__`, `__clang__`, `_MSC_VER`), standard macros (`__STDC_VERSION__`, `__DATE__`, `__TIME__`) |
 
 ---
 
@@ -85,6 +86,27 @@ int main() {
     }
     printf("\nVector UxV = %d", s);
     printf("\nVector ||U|| = sqrt(%d) = %.2f\n", s3, sqrt(s3));
+
+    return 0;
+}
+```
+</details>
+
+<details>
+<summary><b>▶ C Compiler & Standard Version Detector (date_time_version.c)</b></summary>
+
+```c
+#include <stdio.h>
+
+int main() {
+    printf("Compilation Date : %s\n", __DATE__);
+    printf("Compilation Time : %s\n", __TIME__);
+
+#ifdef __STDC_VERSION__
+    printf("C Standard       : %ldL\n", __STDC_VERSION__);
+#else
+    printf("C Standard       : Not defined (pre-C90/ANSI C mode)\n");
+#endif
 
     return 0;
 }
