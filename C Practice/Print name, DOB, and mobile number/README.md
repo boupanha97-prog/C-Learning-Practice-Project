@@ -84,4 +84,31 @@ Full Name:      Bou Panha                 Date of Birth:  15-07-1996
 Mobile Number:  12345676789
 ```
 
+## 🔍 Source Code Explanation
+
+Each file in this module demonstrates different aspects of C's stdout library formatting:
+
+### 1. Simple Print (`simple.c`)
+- Uses literal string arguments with the basic standard `printf()` function to dump static data to the screen.
+
+### 2. Print Right Aligned (`right_aligned.c`)
+- Uses standard format specifiers to alignment-shift text fields.
+- `%-15s` defines a left-aligned string field with a fixed padding width of 15 characters (the negative sign forces left-alignment).
+- `%25s` defines a right-aligned string field with a fixed padding width of 25 characters.
+
+### 3. Print Zero Padded (`zero_padded.c`)
+- Implements a custom function `printZeroPadded(label, value, width)`.
+- It dynamically calculates `padding = width - strlen(value)`.
+- Outputs the left-aligned label first, loops to print the required amount of `'0'` characters, and then prints the string value.
+
+### 4. Uppercase Masked (`uppercase_masked.c`)
+- Demonstrates custom text filters:
+  - **`printUppercase`**: Iterates through each character, converts it to uppercase using `toupper()` (from `<ctype.h>`), and writes it using `putchar()`.
+  - **`printMaskedMobile`**: Loops through the mobile phone digits. If the loop index `i` is between `3` and `len - 4` inclusive, it prints `*` instead of the number, masking the sensitive middle digits.
+
+### 5. Two Columns (`tow_columns.c`)
+- Prints labels and values side-by-side in parallel columns.
+- Uses `%-15s` (field name width) and `%-25s` (field value width) to keep the tabular structure aligned across rows.
+
+
 

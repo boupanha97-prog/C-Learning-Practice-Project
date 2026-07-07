@@ -21,3 +21,13 @@ N : 283
  1$ =3 សន្លឹក
 ```
 
+## 🔍 Source Code Explanation
+
+The program [`counting_system.c`](counting_system.c) implements a simple **greedy algorithm** to determine the minimum number of bills needed to represent a given amount:
+1. **Input**: Prompts the user to enter an integer amount `N` via standard input (`scanf`).
+2. **Greedy Breakdown**: For each banknote denomination (starting from the largest: $100, $50, $20, $10, down to $1):
+   - Computes the number of banknotes required using integer division (`n / denomination`).
+   - Displays the count of banknotes.
+   - Subtracts the total value of those printed banknotes from `n` using the expression `n -= (n / denomination) * denomination` to update the remaining amount for subsequent smaller denominations.
+
+

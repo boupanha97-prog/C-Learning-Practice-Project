@@ -115,6 +115,17 @@ int main() {
 
 ---
 
+## 💡 General Programming Concepts & Source Code Structures
+
+The practice files in this repository demonstrate several foundational programming paradigms in C:
+1. **Arithmetic Decomposition & Conversion**: Programs like the binary/decimal/octal/hex converters showcase iterative division, modulo arithmetic (`%`), and positional polynomial notation to parse and convert numeric values.
+2. **Greedy Algorithms & Decision Making**: The banknote counting system and progressive payroll tax calculator use optimal subtraction algorithms and conditional branching (`if-else` cascades) to evaluate inputs step-by-step.
+3. **Array Pre-calculation vs. Inline Iteration**: The Vector systems showcase code optimization techniques, comparing performance between iterating through multiple loops (high code separation) and calculating values inside a single loop using arrays (reduced execution cycles).
+4. **Environment Introspection**: The C Version detector files demonstrate compile-time preprocessor macros (`#ifdef`, `#elif`) and built-in compiler variables to query compilation status.
+5. **Formatted Text Output**: Custom zero-padding and character masking functions show basic string manipulations and `printf` styling.
+
+---
+
 ## ⚡ Quick Start & Execution Guide
 
 ### Prerequisites

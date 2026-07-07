@@ -17,3 +17,15 @@ N : 12345
 54321
 ```
 
+## 🔍 Source Code Explanation
+
+The program [`Reverse_number.c`](Reverse_number.c) reverses an integer digit-by-digit:
+1. **Input**: Prompts the user to enter an integer `N`.
+2. **Reversal Loop**:
+   A `while(n != 0)` loop processes the integer value:
+   - **Extract and Print Digit**: Evaluates `n % 10` to get the last digit of the current value of `n`, and immediately prints it to standard output.
+   - **Shift Value**: Divides `n` by 10 (`n /= 10`) to discard the processed rightmost digit.
+3. **Execution**:
+   This approach prints the digits in reverse order dynamically without storing them in a string or array, or calculating a new numeric value (avoiding potential integer overflow issues).
+
+
