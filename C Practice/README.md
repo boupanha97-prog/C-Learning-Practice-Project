@@ -38,6 +38,7 @@ Welcome to the **C Learning Practice Project** repository. This workspace contai
 | 🇰🇭 | **[Cambodia Payroll Tax System](<Cambodia payroll tax system/README.md>)** | Calculates Cambodian salary tax base and progressive tax brackets. | Conditional branching, tax slabs |
 | 🔄 | **[Reverse The Number](<Reverse the number/README.md>)** | Reverses digits of an integer input. | While loops, modulo operator (`%`) |
 | 🖨️ | **[Print Formatting](<Print name, DOB, and mobile number/README.md>)** | Format output details (simple, right-aligned, zero-padded, uppercase masked, and multi-column). | String formatting, `printf` widths |
+| 🖨️ | **[Print Block F and a large C](<Print Block F and a large C/README.md>)** | Prints graphical character representations of block shapes (F, C, and mirrored shapes). | Console character graphics, `printf` |
 | 🔍 | **[C Compiler & Standard Version Detector](<Get the C Version in use/README.md>)** | Queries compiler metadata, preprocessor macros, and C standard version. | Compiler detection (`__GNUC__`, `__clang__`, `_MSC_VER`), standard macros (`__STDC_VERSION__`, `__DATE__`, `__TIME__`) |
 
 ---

@@ -41,9 +41,9 @@ Below is the layout of the project, highlighting each practice module:
 │   ├── Get the C Version in use/                    # Queries compiler metadata and C standards
 │   ├── Khmer numeral system for calling money/       # Converts numeric currency to spoken Khmer terminology
 │   ├── Kla Klok/                                    # Simulated Khmer traditional dice game
+│   ├── Print Block F and a large C/                 # Graphical F and C block printing programs
 │   ├── Print name, DOB, and mobile number/          # String formatting options (simple, right-aligned, zero-padded)
 │   └── Reverse the number/                          # Digit reversal utility
-├── Print Block F and a large C/                      # Graphical F and C block printing programs
 ├── .gitignore                                       # Git ignore rules for compiled binaries (.exe, etc.)
 └── README.md                                        # This main navigation guide
 ```
@@ -71,7 +71,7 @@ Jump directly to the detailed documentation for any project module below:
     *   [Reverse The Number](<C Practice/Reverse the number/README.md>)
 *   🖨️ **Formatting & Printing**
     *   [Print name, DOB, and mobile number](<C Practice/Print name, DOB, and mobile number/README.md>)
-    *   [Print Block F and a large C](<Print Block F and a large C/README.md>)
+    *   [Print Block F and a large C](<C Practice/Print Block F and a large C/README.md>)
 *   🔍 **Environment & Version Info**
     *   [C Compiler & Standard Version Detector](<C Practice/Get the C Version in use/README.md>)
 
