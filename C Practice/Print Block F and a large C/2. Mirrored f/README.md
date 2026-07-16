@@ -11,6 +11,23 @@ gcc "mirrored f.c" -o mirrored_f
 .\mirrored_f
 ```
 
+## 📊 Expected Output Results
+```text
+*********  *********
+*********  *********
+*********  *********
+***              ***
+***              ***
+*******      *******
+***   *      *   ***
+*******      *******
+***              ***
+***              ***
+***              ***
+***              ***
+***              ***
+```
+
 ## 🔍 Code Explanation
 - **Dynamic Grid Setup**: Uses standard 2D arrays to map out the block letter's stem (solid), top bar (solid), and middle arm.
 - **Hollow Arm Section**: Implements boundary-checking rules to draw only the outer outline of the middle arm, leaving the interior cells hollow.

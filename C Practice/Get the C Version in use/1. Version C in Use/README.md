@@ -11,6 +11,11 @@ gcc version_c_in_use.c -o version_c_in_use
 .\version_c_in_use
 ```
 
+## 📊 Expected Output Results
+```text
+We are using C11!
+```
+
 ## 🔍 Code Explanation
 Evaluates the preprocessor macro `__STDC_VERSION__` to identify the C Standard active during compilation:
 - `__STDC_VERSION__ >= 201710L` -> C18 standard.

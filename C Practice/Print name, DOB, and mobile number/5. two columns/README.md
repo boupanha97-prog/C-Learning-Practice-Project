@@ -11,6 +11,13 @@ gcc tow_columns.c -o tow_columns
 .\tow_columns
 ```
 
+## 📊 Expected Output Results
+```text
+Field           Value                     Field           Value
+Full Name:      Bou Panha                 Date of Birth:  15-07-1996
+Mobile Number:  12345676789
+```
+
 ## 🔍 Code Explanation
 - Prints labels and values side-by-side in parallel columns.
 - Uses `%-15s` (field name width) and `%-25s` (field value width) to keep the tabular structure aligned across rows.

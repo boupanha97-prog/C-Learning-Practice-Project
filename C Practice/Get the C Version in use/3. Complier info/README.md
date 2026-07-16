@@ -11,6 +11,12 @@ gcc compiler_info.c -o compiler_info
 .\compiler_info
 ```
 
+## 📊 Expected Output Results
+```text
+Compiler : GCC
+Version : 6.3.0
+```
+
 ## 🔍 Code Explanation
 Uses pre-defined preprocessor symbols to detect the active compiler suite:
 - `__clang__` -> Clang (prints `__clang_major__`, `__clang_patchlevel__`).

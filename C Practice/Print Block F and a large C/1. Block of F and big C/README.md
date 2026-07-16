@@ -11,6 +11,29 @@ gcc simple_printf.c -o simple_printf
 .\simple_printf
 ```
 
+## 📊 Expected Output Results
+```text
+######
+#
+#
+#####
+#
+#
+#
+
+
+
+   ######
+ ##      ##
+ #
+ #
+ #
+ #
+ #
+ ##      ##
+   ######
+```
+
 ## 🔍 Code Explanation
 Draws static block shapes:
 - **Block F**: Formed by printing a top horizontal bar (`######`), left vertical side rails (`#`), a middle horizontal bar (`#####`), and remaining bottom rails.

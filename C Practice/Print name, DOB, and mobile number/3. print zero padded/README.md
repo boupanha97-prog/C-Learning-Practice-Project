@@ -11,6 +11,13 @@ gcc zero_padded.c -o zero_padded
 .\zero_padded
 ```
 
+## 📊 Expected Output Results
+```text
+Full Name      : 00000000000Bou Panha
+Date of Birth  : 000000012-March-2006
+Mobile Number  : 00000000000123456789
+```
+
 ## 🔍 Code Explanation
 - Implements a custom function `printZeroPadded(label, value, width)`.
 - It dynamically calculates `padding = width - strlen(value)`.
