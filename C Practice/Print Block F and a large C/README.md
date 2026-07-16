@@ -34,8 +34,7 @@ This program uses raw standard output (`printf`) statements to draw standard pix
   - Curved bottom (` ##      ##` and `   ######`)
 
 ### 2. Mirrored f (`mirrored f.c`)
-This program mirrors the horizontal segments of the block letter `F` so that the vertical backbone sits on the right-hand side rather than the left:
-- Displays a top bar (`######`)
-- Uses leading spaces to shift the vertical backbone characters to the right side (`     #`)
-- Centers the middle bar (` #####`)
-- Ends with right-aligned vertical bars.
+This program dynamically generates a block letter `F` on a grid, applies a custom hollow outline rule to its middle arm, and mirrors it to display both side-by-side:
+- **Dynamic Grid Setup**: Uses standard 2D arrays to map out the block letter's stem (solid), top bar (solid), and middle arm.
+- **Hollow Arm Section**: Implements boundary-checking rules to draw only the outer outline of the middle arm, leaving the interior cells hollow.
+- **Side-by-Side Mirrored Display**: For each row, it constructs the original layout and then mirrors it by reversing the string character-by-character from left to right. It outputs both side-by-side in the console.
