@@ -7,6 +7,7 @@ Simple console printing programs that display graphical character representation
 - [2. Mirrored f - `mirrored f.c`](<2. Mirrored f/mirrored f.c>)
 - [3. Hollow C - `hollow c.c`](<3. Hollow C/hollow c.c>)
 - [4. Rotated f - `rotated f.c`](<4. Rotated f/rotated f.c>)
+- [5. Zigzag FC - `zigzag fc.c`](<5. Zigzag FC/zigzag fc.c>)
 
 ## 🚀 Compilation & Execution
 To compile and execute these files:
@@ -39,6 +40,13 @@ gcc "rotated f.c" -o rotated_f
 .\rotated_f
 ```
 
+### 5. Zigzag FC
+```powershell
+cd "5. Zigzag FC"
+gcc "zigzag fc.c" -o zigzag_fc
+.\zigzag_fc
+```
+
 ## 🔍 Source Code Explanation
 
 ### 1. Block of F and big C (`simple_printf.c`)
@@ -67,3 +75,9 @@ This program dynamically constructs a block letter `C` and renders it with three
 This program creates a block letter `F` (with a hollow arm section) and rotates the entire grid 90 degrees clockwise before printing:
 - **Grid Mapping**: Dynamically calculates standard stem, top bar, and hollow-arm sections.
 - **Clockwise Rotation**: Transforms the `ROWS` x `COLS` character array into a `COLS` x `ROWS` array by mapping `rotated[i][j] = shape[ROWS - 1 - j][i]`.
+
+### 5. Zigzag FC (`zigzag fc.c`)
+This program prints letters `F` and `C` in an alternating, offset zigzag canvas:
+- **Canvas Generation**: Sets up a wide standard 2D canvas of size `CANVAS_ROWS` x `CANVAS_COLS`.
+- **Alternating offsets**: Iterates through the sequence of letters, shifting the row offset up or down dynamically depending on whether it's drawing an `F` or a `C`.
+- **Render Output**: Writes the characters to the canvas and prints the grid as a whole.
